@@ -26,9 +26,9 @@
         
                 <form id="filterForm">
                     <select name="filter" id="filter">
-                        <option value="none">-- Selecciona un filtre</option>
-                        <option value="folder-filter">No mostrar carpetes</option>
-                        <option value="file-filter">No mostrar fitxers</option>
+                        <option value="none">-- Mostrar-ho tot --</option>
+                        <option value="folder-filter">Mostrar només fitxers</option>
+                        <option value="file-filter">Mostrar només carpetes</option>
                     </select>
                     <button type="submit">Filtrar</button>
                 </form>
@@ -38,7 +38,7 @@
                 <?php
                     $dirPath = "./";
                     $files = [];
-                    $excluded = ["README.md", "index.php", "html", "css", "img", "Exercici1"]; // Elements a excloure
+                    $excluded = ["README.md", "index.php", "html", "css", "img"]; // Elements a excloure
 
                     // Obre el directori i recull els fitxers
                     if ($handle = opendir($dirPath)) {

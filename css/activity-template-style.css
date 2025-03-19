@@ -67,6 +67,7 @@ main {
     border: none;
     border-radius: .25rem;
     font-family: inherit;
+    color: whitesmoke
 }
 
 .main-content form button {
