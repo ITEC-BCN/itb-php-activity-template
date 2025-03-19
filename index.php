@@ -38,7 +38,7 @@
                 <?php
                     $dirPath = "./";
                     $files = [];
-                    $excluded = ["README.md", "index.php", "html", "css", "img"]; // Elements a excloure
+                    $excluded = ["README.md", "index.php", "html", "css", "img", "Exercici1"]; // Elements a excloure
 
                     // Obre el directori i recull els fitxers
                     if ($handle = opendir($dirPath)) {
@@ -51,7 +51,7 @@
                     }
 
                     // Ordena els fitxers alfabèticament
-                    sort($files, SORT_NATURAL | SORT_FLAG_CASE);                    
+                    sort($files, SORT_NATURAL | SORT_FLAG_CASE);
 
                     // Processa els fitxers ordenats
                     foreach ($files as $file) {

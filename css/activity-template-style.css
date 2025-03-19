@@ -91,6 +91,7 @@ nav {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 2rem;
     max-height: 50vh; /* Defineix una alçada màxima */
+    min-height: 100vh;
     overflow-y: auto;  /* Activa el scroll vertical */
     padding: 1rem;
 }
